@@ -1,0 +1,199 @@
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navigasi */
+header {
+    background: #000000;
+    color: white;
+    padding: 15px 50px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #dc0f00;
+}
+
+/* Hero Section */
+#hero {
+    height: 100vh;
+    background: linear-gradient(to right, #00d4c6, #007c83);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content h2 {
+    font-size: 2.5em;
+}
+
+.hero-content span {
+    color: #ffeb3b;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    background: white;
+    color: #0077b6;
+    padding: 10px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #ffeb3b;
+}
+
+/* Tentang */
+#about {
+    padding: 100px 50px;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.about-container img {
+    width: 300px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.about-container p {
+    max-width: 500px;
+    margin: 10px;
+    line-height: 1.6;
+}
+
+/* Proyek */
+#projects {
+    padding: 100px 50px;
+    text-align: center;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.project-card {
+    background: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: scale(1.03);
+}
+
+.project-card img {
+    width: 100%;
+}
+
+.project-card h3 {
+    margin: 15px 0 5px;
+}
+
+.project-card p {
+    padding: 0 15px 20px;
+    color: #555;
+}
+
+/* Kontak */
+#contact {
+    background: #0077b6;
+    color: white;
+    padding: 100px 50px;
+    text-align: center;
+}
+
+#contact form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#contact input,
+#contact textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+#contact button {
+    background: #ffeb3b;
+    color: #0077b6;
+    border: none;
+    padding: 10px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+#contact button:hover {
+    background: white;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    header {
+        padding: 10px 20px;
+    }
+    .about-container {
+        flex-direction: column;
+    }
+}
